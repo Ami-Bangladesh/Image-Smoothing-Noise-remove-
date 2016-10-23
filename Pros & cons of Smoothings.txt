@@ -1,0 +1,5 @@
+Gaussian blur is the fastest of the three options and is usually good for most applications.
+
+Median filtering is a non-parametric operation which is really useful when you want to get rid of things like speckle noise.
+
+Neither gaussian nor median filters preserve edges, meaning after applying the filter the location of edges in your image will move. A bilateral filter is edge preserving, but it is slower than a Gaussian filter.
