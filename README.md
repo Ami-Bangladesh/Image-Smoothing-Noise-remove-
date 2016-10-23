@@ -14,6 +14,7 @@ hand, bilateral filtering is a good technique to smooth an image while respectin
 strong edges.
 
 The functions included in OpenCV for this purpose are:
+
 • void boxFilter(InputArray src, OutputArray dst, int ddepth,
 Size ksize, Point anchor = Point(-1,-1), bool normalize = true,
 int borderType = BORDER_DEFAULT): This is a box filter whose kernel
@@ -26,6 +27,7 @@ the same depth as the input image. The kernel size is indicated in ksize. The
 anchor point indicates the position of the so-called anchor pixel. The (-1, -1)
 default value means that the anchor is at the center of the kernel. Finally, the
 border-type treatment is indicated in the borderType parameter.
+
 • void GaussianBlur(InputArray src, OutputArray dst, Size ksize,
 double sigmaX, double sigmaY = 0, int borderType=BORDER_
 DEFAULT): This is done by convolving each point in the src input array
